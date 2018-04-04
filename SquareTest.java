@@ -6,13 +6,13 @@ public class SquareTest {
 
         Shape[] shapes = new Shape[3];
         shapes[0] = new Rectangle();
-        shapes[1]=new Square(4.5, "green",true);
+        shapes[1] = new Square(4.5, "green", true);
         shapes[2] = new Square(3.5, "red", false);
-        for(int i=0;i<shapes.length;i++){
+        for (int i = 0; i < shapes.length; i++) {
             System.out.print(shapes[i]);
-            if(shapes[i].isFilled()){
+            if (shapes[i].isFilled()) {
                 square.howTocolor();
-            }else {
+            } else {
                 System.out.println();
             }
         }
